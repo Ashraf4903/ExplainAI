@@ -16,7 +16,10 @@
 * 
 ## 🎥 Demo Output
 
-[![Watch the Demo Of Output](https://drive.google.com/file/d/1uvF3jWQbZhYCtNPgt6LUQDrtObRZghR0/view?usp=sharing)
+> **Topic:** Generative AI  
+> **Duration:** 41s  
+
+[**▶️ Watch the Sample Video (Google Drive)**](https://drive.google.com/file/d/1uvF3jWQbZhYCtNPgt6LUQDrtObRZghR0/view?usp=sharing)
 ## Prerequisites
 
 * **Python 3.9** or higher
