@@ -1,0 +1,7 @@
+streamlit
+moviepy
+google-generativeai
+groq
+edge-tts
+Pillow
+imageio-ffmpeg

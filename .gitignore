@@ -1,0 +1,26 @@
+# --- 1. CRITICAL: SECURITY ---
+secrets.json
+.env
+
+# --- 2. TEMPORARY GENERATED FILES ---
+# These are created while the video renders
+temp_audio_*.mp3
+temp_viz_*.png
+
+# --- 3. OUTPUT FILES ---
+# Ignore the generated videos so your repo doesn't get huge
+ExplainAI_*.mp4
+
+# --- 4. PYTHON SYSTEM FILES ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- 5. VIRTUAL ENVIRONMENTS ---
+venv/
+env/
+.venv/
+
+# --- 6. OS JUNK FILES ---
+.DS_Store
+Thumbs.db
