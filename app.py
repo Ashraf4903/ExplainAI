@@ -26,10 +26,60 @@ if not hasattr(PIL.Image, 'ANTIALIAS'):
 st.set_page_config(page_title="ExplainAI Pro", page_icon="⚡", layout="wide")
 st.markdown("""
 <style>
-    .stButton>button { width: 100%; border-radius: 6px; height: 3em; font-weight: 600; }
-    .stTextInput>div>div>input { border-radius: 6px; }
+    /* 1. Global Text Scale - Bumps up all standard text */
+    html, body, [class*="css"] {
+        font-size: 26px !important; 
+    }
+
+    /* 2. Titles and Headers */
+    h1 { font-size: 68px !important; }
+    h2 { font-size: 38px !important; }
+    h3 { font-size: 32px !important; }
+
+    /* 3. Input Box Styling */
+    .stTextInput > div > div > input {
+        font-size: 26px !important;
+        height: 55px !important;
+        border-radius: 8px;
+    }
+    .stTextInput label {
+        font-size: 22px !important;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* 4. Button Styling */
+    .stButton > button {
+        width: 100%;
+        height: 55px !important;
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        border-radius: 8px;
+    }
+
+    /* 5. Data Editor / Table Styling */
+    div[data-testid="stDataEditor"] table {
+        font-size: 18px !important;
+    }
+    div[data-testid="stDataEditor"] th {
+        font-size: 20px !important; /* Table Headers */
+        font-weight: bold;
+    }
+    div[data-testid="stDataEditor"] td {
+        font-size: 18px !important; /* Table Cells */
+    }
+
+    /* 6. Success/Error Messages (The Green/Red Boxes) */
+    .stAlert {
+        font-size: 20px !important;
+    }
+    
+    /* 7. Hide Streamlit Footer */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
+
 
 # # ---API CONFIGURATION ---
 def load_api_keys():
